@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background: rgb(34, 66, 93);
+  font-size: 1.5rem;
+  padding: 12px;
+}
+/* p{
+  display: flex;
+} */
+p>img{
+  float: left;
+  margin: 12px;
+  transform: translateX(-100%);
+  opacity: 0;
+  /* display: none; */
+}
+.logo-here img{
+  float: right;
+  opacity: 0;
+  transform: translateX(100%);
+}
+img.slideIn{
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 2s ease;
+}
